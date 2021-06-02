@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Schooladministratie</title>
+        <!--Stylesheets benoemen-->
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" charset="utf-8" src="index.js"></script>
+        <!--Repsonsive-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+       <!-- The sidebar -->
+        <div class="sidebar">
+            <a href="Index.html">Home</a>
+            <a class="active"  href="Opleidingen.html">Opleidingen</a>
+            <a href="Vakken.html">Vakken</a>
+            <a href="Docenten.html">Docenten</a>
+            <a href="Studenten.html">Studenten</a>
+            <a href="Resultaten.html">Resultaten</a>
+        </div>
+        <!-- Page content -->
+        <div class="content">
+            <center>
+            <center><h1>Opleiding toevoegen</h1></center>
+            <form class="form-style-9">
+                <ul>
+                    <li>
+                        <input type="text" name="field1" class="field-style field-split align-left" placeholder="Faculteit" />
+                        <input type="text" name="field2" class="field-style field-split align-right" placeholder="Naam" />
+                    
+                    </li>
+                <li>
+                    <input type="number" name="field1" class="field-style field-split align-left" placeholder="Studiepunten" />
+                    <input type="number" name="field2" class="field-style field-split align-right" placeholder="Traject" />
+                
+                </li>
+                <li>
+                    <input type="date" name="field1" class="field-style field-split align-left" placeholder="Geboortedatum" />
+                    <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+                
+                </li>
+                <li>
+                    <select name="Opleiding" id="Opleidingen">
+                    <p>Opleiding</p><br>
+                    <option value="Programmeren">Programmeren</option>
+                    <option value="Systeem/netwerkbeheer">Systeem/netwerkbeheer</option>
+                    <option value="informatica">Informatica</option>
+                    <option value="Cyber secuirity">Cyber secuirity</option>
+                </select>
+                <input type="text" name="field2" class="field-style field-split align-right" placeholder="Opleidingshoofd" />
+                </li>
+                <li>
+                <label>Extra informatie</label>
+                </li>
+                <li>
+                <textarea name="field5" class="field-style" placeholder="Bericht"></textarea>
+                </li>
+                <li>
+                    <input id="buttontype" type="submit" name="button" onclick="myFunction();" value="Sla op"/>
+                </li>
+                </ul>
+                </form>
+            </center>
+        </div>
+
+
+        <div class="button">
+            <form>    
+                <input class="signout" type="button" onclick="confirmation()" value="Log uit">
+            </form>
+            </div>
+        <script src = "jquery-3.5.1.min.js" > </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </body>
+</html>
